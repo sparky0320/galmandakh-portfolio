@@ -1,0 +1,8 @@
+.DS_Store
+.vercel
+.output
+node_modules
+Documentation
+Alex-Buyer file/img/raw
+*.env
+.env.*

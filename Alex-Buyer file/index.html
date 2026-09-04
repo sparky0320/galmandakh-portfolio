@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galmandakh — Full-stack Developer</title>
+<meta name="description" content="Galmandakh Otgonjargal — full-stack engineer. Ships payment-backed systems from zero to production. Fast ramp-up, applied AI and model architecture.">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Manrope:wght@300;400;500;600;700&family=Unbounded:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<div class="grid-bg"></div>
+
+<div id="topbar">
+  <div class="logo-text">G.</div>
+  <div class="topbar-right">
+    <div class="status-badge">
+      <div class="status-dot"></div>
+      <span data-i18n="status">Компанийн багт нээлттэй</span>
+    </div>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button class="lang-btn active" data-lang="mn" type="button">MN</button>
+      <button class="lang-btn" data-lang="en" type="button">EN</button>
+    </div>
+  </div>
+</div>
+
+<nav id="main-nav">
+  <div class="nav-dot active" data-section="0" data-label-mn="Нүүр" data-label-en="Home" data-label="Нүүр"></div>
+  <div class="nav-dot" data-section="1" data-label-mn="Тухай" data-label-en="About" data-label="Тухай"></div>
+  <div class="nav-dot" data-section="2" data-label-mn="Ажил" data-label-en="Work" data-label="Ажил"></div>
+  <div class="nav-dot" data-section="3" data-label-mn="Лаб" data-label-en="Lab" data-label="Лаб"></div>
+  <div class="nav-dot" data-section="4" data-label-mn="Ур чадвар" data-label-en="Skills" data-label="Ур чадвар"></div>
+  <div class="nav-dot" data-section="5" data-label-mn="Үйлчилгээ" data-label-en="Services" data-label="Үйлчилгээ"></div>
+  <div class="nav-dot" data-section="6" data-label-mn="Холбоо" data-label-en="Contact" data-label="Холбоо"></div>
+</nav>
+
+<!-- ===== HOME ===== -->
+<section class="section active" id="sec-0">
+  <div class="section-content home-content">
+    <div class="home-pre" data-i18n="home.pre">Full-stack хөгжүүлэгч</div>
+    <div class="glitch-wrap" data-text="ГАЛМАНДАХ">
+      <h1 class="home-name" data-i18n="home.name">ГАЛМАНДАХ</h1>
+    </div>
+    <p class="home-role" data-i18n-html="home.role">Next.js, Laravel, Node.js, Flutter. <span>Figma</span>-аас <span>production</span> хүртэл.</p>
+    <div class="home-cta">
+      <a class="btn-glow" onclick="goTo(2)" data-i18n="home.cta1">Ажлууд үзэх</a>
+      <a class="btn-outline-glow" onclick="goTo(3)" data-i18n="home.cta2">Одоо хийж буй</a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span data-i18n="home.scroll">доош</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="sec-1">
+  <div class="section-content scrollable">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <div class="about-img-frame">
+          <img src="img/me.jpg" alt="Galmandakh">
+        </div>
+        <div class="about-img-deco"></div>
+        <div class="about-badge">
+          <div style="font-size:.9rem;font-weight:700;">4+</div>
+          <div style="color:rgba(255,255,255,.7);" data-i18n="about.badge">жил</div>
+        </div>
+      </div>
+      <div>
+        <div class="section-label" data-i18n="about.label">Хэн бэ</div>
+        <div class="about-title" data-i18n-html="about.title">Асуудлыг <span class="accent">задлана,</span><br>системийг хүргэнэ.</div>
+        <p class="about-desc" data-i18n-html="about.desc">
+          Backend, frontend — full-stack хөгжүүлэгч. Даатгал, төлбөр, POS зэрэг бодит үйл ажиллагаа дээр төлбөрийн хэрэгсэлтэй системийг эхнээс нь дуустал босгож, эсвэл production дээр шинэ модуль болгон хүргэсэн. Next.js, Laravel, Node.js, Flutter.
+          <br><br>
+          Шинэ домэйн, шинэ стекийг хурдан сууж, ажлыг хэрэглэгчид хүртэл авч явдаг. Тодорхой бус асуудлыг задлаад шийдэл гаргах, шинэ санаа гаргаж бүтээгдэхүүнд оруулах нь миний тогтмол ажиллах арга.
+          <br><br>
+          Хиймэл оюун, загвар хөгжүүлэлт, системийн архитектурт чиглэсэн. AI хэрэгслийг өдөр тутмын хөгжүүлэлтэд аль хэдийн ашигладаг. Дараагийн алхам — загвар болон AI-г байгууллагын системд нэгтгэх.
+        </p>
+        <ul class="about-points">
+          <li data-i18n="about.p1">Хурдан сурч, хүргэнэ</li>
+          <li data-i18n="about.p2">Шинэ санаа, тодорхой шийдэл</li>
+          <li data-i18n="about.p3">Хиймэл оюун · загварчлал</li>
+        </ul>
+        <div class="skill-pills">
+          <span class="skill-pill">Backend</span>
+          <span class="skill-pill">Frontend</span>
+          <span class="skill-pill">Next.js</span>
+          <span class="skill-pill">Laravel</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Flutter</span>
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">Photoshop</span>
+          <span class="skill-pill">Illustrator</span>
+          <span class="skill-pill">Cursor</span>
+          <span class="skill-pill">Higgsfield</span>
+          <span class="skill-pill">AI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WORK ===== -->
+<section class="section" id="sec-2">
+  <div class="section-content work-wrap scrollable">
+    <div class="section-label" data-i18n="work.label">Портфолио</div>
+    <div class="work-head">
+      <div class="section-title" data-i18n="work.title">Хийсэн ажил</div>
+      <div class="work-filters">
+        <button class="wf-btn active" data-filter="all" type="button" data-i18n="work.all">Бүгд</button>
+        <button class="wf-btn" data-filter="zero" type="button" data-i18n="tag.zero">Эхнээс дуустал</button>
+        <button class="wf-btn" data-filter="feat" type="button" data-i18n="work.feat">Feature</button>
+        <button class="wf-btn" data-filter="web" type="button">Web</button>
+        <button class="wf-btn" data-filter="app" type="button">App</button>
+      </div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card"
+        data-filter="web zero"
+        data-title-mn="Ulaanbaatarcar" data-title-en="Ulaanbaatarcar"
+        data-img="img/portfolio/ubcar.jpg"
+        data-tags-mn="Вэб,Мэдээ,Админ" data-tags-en="Web,News,Admin"
+        data-desc-mn="Автомашины мэдээллийн сайт — мэдээ, динамик контент, админ хэсэгтэй. Машин бүртгэх систем биш. Эхнээс нь Next.js-ээр хөгжүүлсэн."
+        data-desc-en="An automotive news site — articles, dynamic content, and an admin. Not a vehicle registry. Built from scratch in Next.js."
+        data-role-mn="Full-stack · 0→1" data-role-en="Full-stack · 0→1"
+        data-year="2024–25"
+        data-stack="Next.js"
+        data-live="" data-store="">
+        <span class="project-kind">Web</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/ubcar.jpg" alt="Ulaanbaatarcar">
+        <div class="project-overlay">
+          <div class="project-tag">Web · News · Admin</div>
+          <div class="project-name">Ulaanbaatarcar</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="web zero"
+        data-title-mn="Amardi даатгал" data-title-en="Amardi insurance"
+        data-img="img/portfolio/amardi.jpg"
+        data-tags-mn="Вэб,Даатгал,QPay" data-tags-en="Web,Insurance,QPay"
+        data-desc-mn="Amardi DIGITAL BROKER даатгалын системийг эхнээс нь хөгжүүлсэн. Бүртгэл → QPay төлбөр → баталгаа хэвлэх. Нууцлалтай байгууллага тул олон нийтийн холбоос байхгүй."
+        data-desc-en="Amardi DIGITAL BROKER insurance system, built from scratch. Register → QPay → print the certificate. No public link — the organisation is confidential."
+        data-role-mn="Full-stack · 0→1" data-role-en="Full-stack · 0→1"
+        data-year="2025"
+        data-stack="Next.js · Node.js · QPay"
+        data-live="" data-store="">
+        <span class="project-kind">Web</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/amardi.jpg" alt="Amardi insurance">
+        <div class="project-overlay">
+          <div class="project-tag">Web · Insurance · QPay</div>
+          <div class="project-name">Amardi даатгал</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="app zero"
+        data-title-mn="Amardi miniapp" data-title-en="Amardi miniapp"
+        data-img="img/portfolio/amardi-mini.jpg"
+        data-tags-mn="Miniapp,UBCab,Даатгал" data-tags-en="Miniapp,UBCab,Insurance"
+        data-desc-mn="UBCab апп дотор ажилладаг даатгалын miniapp. Хэрэглэгчийн даатгал, гэнэтийн ослын даатгал, тээврийн хэрэгслийн даатгал. Тусад нь орох холбоос байхгүй — UBCab-аас нээгдэнэ."
+        data-desc-en="Insurance miniapp that runs inside the UBCab app. Personal cover, accident cover, and vehicle insurance. No standalone link — it opens from UBCab."
+        data-role-mn="Flutter · 0→1" data-role-en="Flutter · 0→1"
+        data-year="2025"
+        data-stack="Flutter · Miniapp · UBCab"
+        data-live="" data-store="">
+        <span class="project-kind">App</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/amardi-mini.jpg" alt="Amardi miniapp">
+        <div class="project-overlay">
+          <div class="project-tag">Miniapp · UBCab</div>
+          <div class="project-name">Amardi miniapp</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="web zero"
+        data-title-mn="CarePay landing" data-title-en="CarePay landing"
+        data-img="img/portfolio/carepay-web.jpg"
+        data-tags-mn="Landing,Эхнээс дуустал,Финтек" data-tags-en="Landing,0→1,Fintech"
+        data-desc-mn="CarePay Virtual Membership Card-ийн landing хуудсыг эхнээс нь хөгжүүлсэн. Багц, хамтрагч эмнэлэг, төлбөрийн урсгал. Холбоосоор ороход компани нэмэлт хөгжүүлэлт хийж өөрчилсөн байж болно."
+        data-desc-en="CarePay Virtual Membership Card landing, built from scratch. Packages, partner clinics, payment flow. The live page may have changed after further work by the company."
+        data-role-mn="Landing · 0→1" data-role-en="Landing · 0→1"
+        data-year="2024–26"
+        data-stack="Laravel · PHP"
+        data-live="https://care.mn/" data-store="https://apps.apple.com/us/app/carepay/id6446045879">
+        <span class="project-kind">Web</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/carepay-web.jpg" alt="CarePay landing">
+        <div class="project-overlay">
+          <div class="project-tag">Landing · 0→1</div>
+          <div class="project-name">CarePay landing</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="web zero"
+        data-title-mn="GoCare landing" data-title-en="GoCare landing"
+        data-img="img/portfolio/gocare.jpg"
+        data-tags-mn="Landing,Эхнээс дуустал,Walk to earn" data-tags-en="Landing,0→1,Walk to earn"
+        data-desc-mn="GoCare-ийн landing хуудсыг эхнээс нь хийсэн. Алхаад оноо цуглуулах бүтээгдэхүүний танилцуулга, апп руу чиглүүлэх."
+        data-desc-en="GoCare marketing landing, built from scratch. Walk-to-earn story and a path into the app."
+        data-role-mn="Landing · 0→1" data-role-en="Landing · 0→1"
+        data-year="2023–26"
+        data-stack="Next.js · Landing"
+        data-live="https://go.care.mn/" data-store="https://apps.apple.com/us/app/gocare/id6454793202">
+        <span class="project-kind">Web</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/gocare.jpg" alt="GoCare landing">
+        <div class="project-overlay">
+          <div class="project-tag">Landing · 0→1</div>
+          <div class="project-name">GoCare landing</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="web zero"
+        data-title-mn="EduCare" data-title-en="EduCare"
+        data-img="img/portfolio/educare.jpg"
+        data-tags-mn="LMS,Эхнээс дуустал,Сургалт" data-tags-en="LMS,0→1,Training"
+        data-desc-mn="Байгууллагын сургалтын системийг эхнээс нь дуустал хөгжүүлсэн. Хичээл, бүртгэл, CARE урамшуулал — эмч, байгууллагад зориулсан LMS."
+        data-desc-en="Organization training system (LMS) built end to end. Courses, enrollment, CARE rewards — for clinicians and companies."
+        data-role-mn="Full-stack · 0→1" data-role-en="Full-stack · 0→1"
+        data-year="2024–26"
+        data-stack="Laravel · PHP"
+        data-live="https://edu.care.mn/#/index" data-store="">
+        <span class="project-kind">Web</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/educare.jpg" alt="EduCare">
+        <div class="project-overlay">
+          <div class="project-tag">LMS · 0→1</div>
+          <div class="project-name">EduCare</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="web zero"
+        data-title-mn="Talon landing" data-title-en="Talon landing"
+        data-img="img/portfolio/talon.jpg"
+        data-tags-mn="Landing,Эхнээс дуустал,POS" data-tags-en="Landing,0→1,POS"
+        data-desc-mn="talon.mn landing хуудсыг эхнээс нь хөгжүүлсэн. POS, Hotel, Parking, Benefit зэрэг экосистемийн танилцуулга."
+        data-desc-en="talon.mn landing, built from zero. The public face of POS, Hotel, Parking and Benefit."
+        data-role-mn="Landing · 0→1" data-role-en="Landing · 0→1"
+        data-year="2025–26"
+        data-stack="Next.js · Landing"
+        data-live="https://talon.mn/" data-store="">
+        <span class="project-kind">Web</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/talon.jpg" alt="Talon landing">
+        <div class="project-overlay">
+          <div class="project-tag">Landing · 0→1</div>
+          <div class="project-name">Talon landing</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="web feat"
+        data-title-mn="Care.mn" data-title-en="Care.mn"
+        data-img="img/portfolio/care.jpg"
+        data-tags-mn="Вэб,Production,Feature" data-tags-en="Web,Production,Feature"
+        data-desc-mn="Production гарсан Care экосистемийн үндсэн сайт дээр шинэ feature нэмж хөгжүүлэлтэд орсон."
+        data-desc-en="Joined the live Care ecosystem site after launch — new features on a product already in production."
+        data-role-mn="Feature · production" data-role-en="Feature · production"
+        data-year="2024–26"
+        data-stack="Web · Feature"
+        data-live="https://care.mn/" data-store="">
+        <span class="project-kind">Web</span>
+        <span class="scope-tag feat" data-i18n="tag.feat">Production · feature</span>
+        <img src="img/portfolio/care.jpg" alt="Care.mn">
+        <div class="project-overlay">
+          <div class="project-tag">Web · Feature</div>
+          <div class="project-name">Care.mn</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="app feat"
+        data-title-mn="Talon POS · KDS · принтер" data-title-en="Talon POS · KDS · printer"
+        data-img="img/portfolio/talon-pos.jpg"
+        data-tags-mn="POS,KDS,Принтер,Цаг бүртгэл" data-tags-en="POS,KDS,Printer,Time clock"
+        data-desc-mn="Talon production дээр шинэ feature: POS хөгжүүлэлт, kitchen display (KDS), custom принтерийн систем, цаг бүртгэл. Амьд цэгүүдэд ажиллаж байгаа систем дээр нэмсэн."
+        data-desc-en="Features on live Talon: POS work, kitchen display (KDS), a custom printer stack, and time tracking — shipped onto a system already in production."
+        data-role-mn="Feature · production" data-role-en="Feature · production"
+        data-year="2025–26"
+        data-stack="POS · KDS · Printer · Time clock"
+        data-live="https://talon.mn/" data-store="https://play.google.com/store/apps/details?id=com.akt.talonPos&hl=mn">
+        <span class="project-kind">App</span>
+        <span class="scope-tag feat" data-i18n="tag.feat">Production · feature</span>
+        <img src="img/portfolio/talon-pos.jpg" alt="Talon POS">
+        <div class="project-overlay">
+          <div class="project-tag">POS · KDS · Printer</div>
+          <div class="project-name">Talon POS</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="app feat"
+        data-title-mn="GoCare апп" data-title-en="GoCare app"
+        data-img="img/portfolio/gocare.jpg"
+        data-tags-mn="Апп,Walk to earn,Feature" data-tags-en="App,Walk to earn,Feature"
+        data-desc-mn="GoCare аппын хөгжүүлэлтэд орсон. Алхам → оноо → купон урсгал дээр модуль, feature нэмсэн."
+        data-desc-en="Contributed to GoCare app development — new modules on the live walk-to-earn flow (steps → points → coupons)."
+        data-role-mn="Feature · production" data-role-en="Feature · production"
+        data-year="2023–26"
+        data-stack="Flutter · iOS · Android"
+        data-live="https://go.care.mn/" data-store="https://apps.apple.com/us/app/gocare/id6454793202">
+        <span class="project-kind">App</span>
+        <span class="scope-tag feat" data-i18n="tag.feat">Production · feature</span>
+        <img src="img/portfolio/gocare.jpg" alt="GoCare app">
+        <div class="project-overlay">
+          <div class="project-tag">App · Feature</div>
+          <div class="project-name">GoCare апп</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="app feat"
+        data-title-mn="CarePay апп" data-title-en="CarePay app"
+        data-img="img/portfolio/carepay.jpg"
+        data-tags-mn="Апп,Финтек,Feature" data-tags-en="App,Fintech,Feature"
+        data-desc-mn="CarePay аппын хөгжүүлэлтэд орсон. Гишүүнчлэл, төлбөр, эмнэлгийн үйлчилгээний апп дээр feature нэмсэн."
+        data-desc-en="Contributed to CarePay app development — membership, payments and clinic access on the live app."
+        data-role-mn="Feature · production" data-role-en="Feature · production"
+        data-year="2023–26"
+        data-stack="Flutter · Payments · Membership"
+        data-live="https://care.mn/" data-store="https://apps.apple.com/us/app/carepay/id6446045879">
+        <span class="project-kind">App</span>
+        <span class="scope-tag feat" data-i18n="tag.feat">Production · feature</span>
+        <img src="img/portfolio/carepay.jpg" alt="CarePay app">
+        <div class="project-overlay">
+          <div class="project-tag">App · Feature</div>
+          <div class="project-name">CarePay апп</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="app feat"
+        data-title-mn="Talon App" data-title-en="Talon App"
+        data-img="img/portfolio/talon-app.jpg"
+        data-tags-mn="Апп,Хэтэвч,Feature" data-tags-en="App,Wallet,Feature"
+        data-desc-mn="Production гарсан Talon хэрэглэгчийн апп дээр feature нэмсэн. Хэтэвч, өдрийн хоол/кофе талон, захиалга, бонус QR."
+        data-desc-en="Features on the live Talon consumer app: wallet, lunch/coffee vouchers, ordering, bonus QR."
+        data-role-mn="Feature · production" data-role-en="Feature · production"
+        data-year="2025–26"
+        data-stack="Flutter · Wallet · Payments"
+        data-live="https://play.google.com/store/apps/details?id=com.akt.talon_app_mobile&hl=mn" data-store="https://play.google.com/store/apps/details?id=com.akt.talonPos&hl=mn">
+        <span class="project-kind">App</span>
+        <span class="scope-tag feat" data-i18n="tag.feat">Production · feature</span>
+        <img src="img/portfolio/talon-app.jpg" alt="Talon App">
+        <div class="project-overlay">
+          <div class="project-tag">App · Feature</div>
+          <div class="project-name">Talon App</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="web feat"
+        data-title-mn="Ариун · Хөгжил Трейд" data-title-en="Ariun · Khugjil Trade"
+        data-img="img/portfolio/ariun.jpg"
+        data-tags-mn="Вэб,Брэнд,Feature" data-tags-en="Web,Brand,Feature"
+        data-desc-mn="Production гарсан брэндийн сайт дээр feature / хөгжүүлэлт хийсэн. Каталог, мэдээ, ажлын байр, Монгол/Англи."
+        data-desc-en="Feature work on the live Ariun brand site — catalog, news, careers, MN/EN."
+        data-role-mn="Feature · production" data-role-en="Feature · production"
+        data-year="2025"
+        data-stack="Web"
+        data-live="https://khugjiltrade.mn/ariun" data-store="">
+        <span class="project-kind">Web</span>
+        <span class="scope-tag feat" data-i18n="tag.feat">Production · feature</span>
+        <img src="img/portfolio/ariun.jpg" alt="Ariun">
+        <div class="project-overlay">
+          <div class="project-tag">Web · Feature</div>
+          <div class="project-name">Ariun</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="web feat"
+        data-title-mn="ELFBAR" data-title-en="ELFBAR"
+        data-img="img/portfolio/elfbar.jpg"
+        data-tags-mn="Вэб,Глобал брэнд,Feature" data-tags-en="Web,Global brand,Feature"
+        data-desc-mn="Олон улсын брэндийн сайт production дээр байхад фронт хөгжүүлэлт / feature нэмсэн."
+        data-desc-en="Front-end feature work on a live global brand site."
+        data-role-mn="Feature · production" data-role-en="Feature · production"
+        data-year="2024–26"
+        data-stack="Web"
+        data-live="https://www.elfbar.com/" data-store="">
+        <span class="project-kind">Web</span>
+        <span class="scope-tag feat" data-i18n="tag.feat">Production · feature</span>
+        <img src="img/portfolio/elfbar.jpg" alt="ELFBAR">
+        <div class="project-overlay">
+          <div class="project-tag">Web · Feature</div>
+          <div class="project-name">ELFBAR</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="app zero"
+        data-title-mn="Buren Trade · Хэрэглэгч" data-title-en="Buren Trade · User"
+        data-img="img/portfolio/buren-user.jpg"
+        data-tags-mn="Апп,Marketplace,Эхнээс дуустал" data-tags-en="App,Marketplace,0→1"
+        data-desc-mn="Buren Trade хэрэглэгчийн апп. Үйлчилгээ захиалах, захиалга, төлбөр — marketplace-ийн хэрэглэгчийн тал. Бүтэн системийн нэг хэсэг."
+        data-desc-en="Buren Trade customer app. Book a service, track the job, pay — the consumer side of the marketplace."
+        data-role-mn="Full-stack · 0→1" data-role-en="Full-stack · 0→1"
+        data-year="2024–25"
+        data-stack="Flutter · Payments · Marketplace"
+        data-live="" data-store="https://play.google.com/store/apps/details?id=com.buren.trade.user&hl=mn"
+        data-more='[{"mn":"Хэрэглэгч · Play","en":"User · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.user&hl=mn"},{"mn":"Нийлүүлэгч · Play","en":"Provider · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.providerapp&hl=mn"},{"mn":"Ажилтан · Play","en":"Serviceman · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.serviceman&hl=mn"},{"mn":"Веб","en":"Web","href":"https://www.burentrade.com/"}]'>
+        <span class="project-kind">App</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/buren-user.jpg" alt="Buren Trade User">
+        <div class="project-overlay">
+          <div class="project-tag">Buren Trade · User</div>
+          <div class="project-name">Хэрэглэгч</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> Play Store</span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="app zero"
+        data-title-mn="Buren Trade · Нийлүүлэгч" data-title-en="Buren Trade · Provider"
+        data-img="img/portfolio/buren-provider.jpg"
+        data-tags-mn="Апп,Provider,Эхнээс дуустал" data-tags-en="App,Provider,0→1"
+        data-desc-mn="Buren Trade нийлүүлэгчийн апп. Орлого, захиалга, ажилтнууд, үйлчилгээний удирдлага."
+        data-desc-en="Buren Trade provider app. Earnings, bookings, crew, and service catalog."
+        data-role-mn="Full-stack · 0→1" data-role-en="Full-stack · 0→1"
+        data-year="2024–25"
+        data-stack="Flutter · Provider dashboard"
+        data-live="" data-store="https://play.google.com/store/apps/details?id=com.buren.trade.providerapp&hl=mn"
+        data-more='[{"mn":"Хэрэглэгч · Play","en":"User · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.user&hl=mn"},{"mn":"Нийлүүлэгч · Play","en":"Provider · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.providerapp&hl=mn"},{"mn":"Ажилтан · Play","en":"Serviceman · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.serviceman&hl=mn"},{"mn":"Веб","en":"Web","href":"https://www.burentrade.com/"}]'>
+        <span class="project-kind">App</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/buren-provider.jpg" alt="Buren Trade Provider">
+        <div class="project-overlay">
+          <div class="project-tag">Buren Trade · Provider</div>
+          <div class="project-name">Нийлүүлэгч</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> Play Store</span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="app zero"
+        data-title-mn="Buren Trade · Ажилтан" data-title-en="Buren Trade · Serviceman"
+        data-img="img/portfolio/buren-serviceman.jpg"
+        data-tags-mn="Апп,Ажилтан,Эхнээс дуустал" data-tags-en="App,Field tech,0→1"
+        data-desc-mn="Buren Trade үйлчилгээний ажилтны апп. Дуудлага хүлээн авах, хуваарь, төлбөр, чат."
+        data-desc-en="Buren Trade field-tech app. Incoming jobs, schedule, payments, in-app chat."
+        data-role-mn="Full-stack · 0→1" data-role-en="Full-stack · 0→1"
+        data-year="2024–25"
+        data-stack="Flutter · Field ops"
+        data-live="" data-store="https://play.google.com/store/apps/details?id=com.buren.trade.serviceman&hl=mn"
+        data-more='[{"mn":"Хэрэглэгч · Play","en":"User · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.user&hl=mn"},{"mn":"Нийлүүлэгч · Play","en":"Provider · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.providerapp&hl=mn"},{"mn":"Ажилтан · Play","en":"Serviceman · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.serviceman&hl=mn"},{"mn":"Веб","en":"Web","href":"https://www.burentrade.com/"}]'>
+        <span class="project-kind">App</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/buren-serviceman.jpg" alt="Buren Trade Serviceman">
+        <div class="project-overlay">
+          <div class="project-tag">Buren Trade · Serviceman</div>
+          <div class="project-name">Ажилтан</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> Play Store</span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-filter="web zero"
+        data-title-mn="Buren Trade · Веб" data-title-en="Buren Trade · Web"
+        data-img="img/portfolio/buren-web.jpg"
+        data-tags-mn="Вэб,Marketplace,Эхнээс дуустал" data-tags-en="Web,Marketplace,0→1"
+        data-desc-mn="burentrade.com — засвар үйлчилгээний захиалгын вэб. Хайлт, ангилал, мэргэжилтэн, бүртгэл. Гурван апптай нэг экосистем."
+        data-desc-en="burentrade.com — the repair-booking website. Search, categories, specialists, accounts. Same ecosystem as the three apps."
+        data-role-mn="Full-stack · 0→1" data-role-en="Full-stack · 0→1"
+        data-year="2024–25"
+        data-stack="Web · Marketplace · Payments"
+        data-live="https://www.burentrade.com/" data-store=""
+        data-more='[{"mn":"Хэрэглэгч · Play","en":"User · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.user&hl=mn"},{"mn":"Нийлүүлэгч · Play","en":"Provider · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.providerapp&hl=mn"},{"mn":"Ажилтан · Play","en":"Serviceman · Play","href":"https://play.google.com/store/apps/details?id=com.buren.trade.serviceman&hl=mn"},{"mn":"Веб","en":"Web","href":"https://www.burentrade.com/"}]'>
+        <span class="project-kind">Web</span>
+        <span class="scope-tag zero" data-i18n="tag.zero">Эхнээс дуустал</span>
+        <img src="img/portfolio/buren-web.jpg" alt="Buren Trade web">
+        <div class="project-overlay">
+          <div class="project-tag">Buren Trade · Web</div>
+          <div class="project-name">burentrade.com</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> burentrade.com</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== LAB / IN PROGRESS ===== -->
+<section class="section" id="sec-3">
+  <div class="section-content work-wrap scrollable">
+    <div class="section-label" data-i18n="lab.label">Хувийн лаборатори</div>
+    <div class="section-title" data-i18n="lab.title">Одоо хийж буй</div>
+    <div class="lab-grid">
+
+      <div class="project-card featured"
+        data-title-mn="WEZAAL" data-title-en="WEZAAL"
+        data-img="img/portfolio/wezaal.jpg"
+        data-tags-mn="Вэб,Спорт,Эхнээс дуустал" data-tags-en="Web,Sports,0→1"
+        data-desc-mn="Заал захиалга, матч бүрдүүлэх платформ. Хүссэн спортоо сонгоод матч нээнэ — тоглогчид нэгдэж, босго бүрдвэл заал автоматаар захиалагдана. Футзал, сагсан бөмбөг, волейболоос эхлээд код бичих уулзалт, board game хүртэл."
+        data-desc-en="Court booking plus matchmaking. Pick a sport, open a match — when the roster fills, the hall books itself. Futsal and basketball through to coding meetups and board games."
+        data-role-mn="Өөрийн санаа · 0→1" data-role-en="Own idea · 0→1"
+        data-year="2026"
+        data-stack="Next.js · Maps · Payments"
+        data-live="https://wezaal.mn/" data-store="">
+        <span class="now-badge" data-i18n="lab.livebuild">Live · хөгжүүлэлт</span>
+        <img src="img/portfolio/wezaal.jpg" alt="WEZAAL">
+        <div class="project-overlay">
+          <div class="project-tag">Web · Sports · Community</div>
+          <div class="project-name">WEZAAL</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> wezaal.mn</span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-title-mn="Мөр — CTF дасгал" data-title-en="Mör — CTF lab"
+        data-img="img/portfolio/ctf.jpg"
+        data-tags-mn="Вэб,CTF,Эхнээс дуустал" data-tags-en="Web,CTF,0→1"
+        data-desc-mn="Flag олж сурах хувийн дасгалын талбар. Веб, крипто, форензик, реверс, pwn — 270 архив бодлого, 70 дасгал, 6 категори. Тэмцээн биш, алхам алхмаар сурах зориулалттай."
+        data-desc-en="A private lab for learning to find flags. Web, crypto, forensics, reverse, pwn — 270 archive problems, 70 drills, 6 tracks. Practice, not a contest."
+        data-role-mn="Өөрийн санаа · 0→1" data-role-en="Own idea · 0→1"
+        data-year="2026"
+        data-stack="Next.js · CTF platform"
+        data-live="https://ctf-drab.vercel.app/" data-store="">
+        <span class="now-badge" data-i18n="lab.now">Хийж байна</span>
+        <img src="img/portfolio/ctf.jpg" alt="CTF lab">
+        <div class="project-overlay">
+          <div class="project-tag">Web · Security lab</div>
+          <div class="project-name">Мөр</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-title-mn="Оюун тоглоом" data-title-en="Mind Games"
+        data-img="img/portfolio/boardgame.jpg"
+        data-tags-mn="Вэб,Тоглоом,Эхнээс дуустал" data-tags-en="Web,Games,0→1"
+        data-desc-mn="Хөлөгт тоглоомыг вэбээр шууд тоглох + дэлгүүр. Цуваа, Нууц дарга, Нөлөө, This is Mongolia — 2–10 хүний тоглоом, үнийн харьцуулалт, брэндийн шоукейс."
+        data-desc-en="Play board games in the browser, then buy the box. Sequence-style, hidden-role, influence and a Ulaanbaatar original — plus a shop layer for sets and accessories."
+        data-role-mn="Өөрийн санаа · 0→1" data-role-en="Own idea · 0→1"
+        data-year="2026"
+        data-stack="Web games · E-commerce"
+        data-live="https://boardgame-nine-alpha.vercel.app/" data-store="">
+        <span class="now-badge" data-i18n="lab.now">Хийж байна</span>
+        <img src="img/portfolio/boardgame.jpg" alt="Board games">
+        <div class="project-overlay">
+          <div class="project-tag">Web · Games</div>
+          <div class="project-name" data-i18n="lab.boardName">Оюун тоглоом</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+      <div class="project-card"
+        data-title-mn="Сан AI" data-title-en="San AI"
+        data-img="img/portfolio/sanai.jpg"
+        data-tags-mn="Апп,AI,Эхнээс дуустал" data-tags-en="App,AI,0→1"
+        data-desc-mn="«Хэлээд л — бүртгэгдэнэ.» Зарлагаа дуу хоолой, камер (OCR), текстаар секундын дотор бүртгээд AI зөвлөгөө авна. Төсөв, тайлан, зээлийн хэсэг — одоо идэвхтэй хөгжүүлж буй хувийн бүтээгдэхүүн."
+        data-desc-en="Say it — it’s logged. Voice, camera OCR or text, then AI advice. Budget, reports and loans — a personal finance product still on the bench, designed end to end."
+        data-role-mn="Өөрийн санаа · 0→1" data-role-en="Own idea · 0→1"
+        data-year="2026"
+        data-stack="Mobile UI · Voice · OCR · AI"
+        data-live="" data-store="">
+        <span class="now-badge" data-i18n="lab.now">Хийж байна</span>
+        <img src="img/portfolio/sanai.jpg" alt="San AI">
+        <div class="project-overlay">
+          <div class="project-tag">App · AI finance</div>
+          <div class="project-name">Сан AI</div>
+          <span class="project-link"><i class="bi bi-arrow-up-right"></i> <span data-i18n="work.view">Дэлгэрэнгүй</span></span>
+        </div>
+      </div>
+
+    </div>
+    <p class="lab-note" data-i18n="lab.note">Эдгээр нь захиалгын ажил биш — өөрөө санаачилж хөгжүүлж буй системүүд. WEZAAL нээлттэй, Мөр, оюун тоглоом, Сан AI идэвхтэй явж байна.</p>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section" id="sec-4">
+  <div class="section-content stats-wrap">
+    <div class="section-label" data-i18n="skills.label">Тоо</div>
+    <div class="section-title" data-i18n="skills.title">Гараас гарсан</div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num counter" data-target="16">0</div>
+        <div class="stat-label" data-i18n="skills.s1">Төсөл</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num counter" data-target="7">0</div>
+        <div class="stat-label" data-i18n="skills.s2">Мобайл апп</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num counter" data-target="6">0</div>
+        <div class="stat-label" data-i18n="skills.s3">Амьд вэб</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num counter" data-target="4">0</div>
+        <div class="stat-label" data-i18n="skills.s4">Жил</div>
+      </div>
+    </div>
+    <div class="skills-bars">
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span data-i18n="skills.b1">Next.js · Laravel · Node.js</span><span>90%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span data-i18n="skills.b2">Flutter / мобайл</span><span>86%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="86"></div></div>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span data-i18n="skills.b3">POS · KDS · принтер</span><span>84%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="84"></div></div>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span data-i18n="skills.b4">Figma · Photoshop · Illustrator</span><span>70%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section" id="sec-5">
+  <div class="section-content services-wrap">
+    <div class="section-label" data-i18n="svc.label">Юу хийдэг вэ</div>
+    <div class="section-title" data-i18n="svc.title">Үйлчилгээ</div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">⌘</div>
+        <div class="service-name" data-i18n="svc.n1">Full-stack вэб</div>
+        <div class="service-desc" data-i18n="svc.d1">Next.js, Laravel, Node.js. Landing, LMS, дашбоард, QPay төлбөр — эхнээс нь бүтэн систем.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">▣</div>
+        <div class="service-name" data-i18n="svc.n2">Flutter апп</div>
+        <div class="service-desc" data-i18n="svc.d2">Miniapp, POS, marketplace. iOS &amp; Android дээр хөгжүүлэлт.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">◇</div>
+        <div class="service-name" data-i18n="svc.n3">POS · KDS · принтер</div>
+        <div class="service-desc" data-i18n="svc.d3">Цаг бүртгэл, kitchen display, custom принтер, касс. Амьд цэг дээр ажилладаг систем.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">→</div>
+        <div class="service-name" data-i18n="svc.n4">Эхнээс дуустал</div>
+        <div class="service-desc" data-i18n="svc.d4">Хоосон хуудаснаас систем босгоно. Даатгал, LMS, landing, miniapp.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⬡</div>
+        <div class="service-name" data-i18n="svc.n5">Production feature</div>
+        <div class="service-desc" data-i18n="svc.d5">Амьд систем дээр шинэ модуль нэмнэ. ClickUp / Trello-оор явц барина.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">✦</div>
+        <div class="service-name" data-i18n="svc.n6">Хиймэл оюун · загварчлал</div>
+        <div class="service-desc" data-i18n="svc.d6">Загвар хөгжүүлэх, архитектурыг бодох чиглэлтэй. Шинэ орчинд хурдан сууж, санаа гаргаад шийдэл хүргэнэ.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="sec-6">
+  <div class="section-content contact-wrap">
+    <div class="section-label" data-i18n="contact.label">Холбоо барих</div>
+    <div class="section-title" data-i18n="contact.title">Надтай холбогдоорой</div>
+    <p class="contact-sub" data-i18n="contact.sub">Баг эсвэл байгууллагатай шууд холбогдоорой — утас, имэйл, GitHub.</p>
+    <div class="contact-list">
+      <a class="contact-link" href="tel:+97694867589">
+        <span class="contact-ico"><i class="bi bi-telephone-fill"></i></span>
+        <span class="contact-meta">
+          <span class="contact-k" data-i18n="contact.phone">Утас</span>
+          <span class="contact-v">9486 7589</span>
+        </span>
+      </a>
+      <a class="contact-link" href="mailto:galmandakh.otgonjargal@gmail.com">
+        <span class="contact-ico"><i class="bi bi-envelope-fill"></i></span>
+        <span class="contact-meta">
+          <span class="contact-k" data-i18n="contact.email">Имэйл</span>
+          <span class="contact-v contact-v-mail">galmandakh.otgonjargal@gmail.com</span>
+        </span>
+      </a>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/sparky0320" class="social-btn" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://www.instagram.com/sparky_spiralz/" class="social-btn" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="mailto:galmandakh.otgonjargal@gmail.com" class="social-btn" title="Email"><i class="bi bi-envelope"></i></a>
+      <a href="tel:+97694867589" class="social-btn" title="Phone"><i class="bi bi-telephone"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECT MODAL ===== -->
+<div id="proj-modal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop-blur" id="modal-backdrop"></div>
+  <div class="modal-box">
+    <div class="modal-img-wrap">
+      <img id="modal-img" class="modal-hero-img" src="" alt="">
+      <div class="modal-img-gradient"></div>
+      <button class="modal-close-btn" id="modal-close" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="modal-body-wrap">
+      <div class="modal-tags-row" id="modal-chips"></div>
+      <div class="modal-title" id="modal-title"></div>
+      <p class="modal-desc" id="modal-desc"></p>
+      <div class="modal-meta-grid">
+        <div class="modal-meta-item">
+          <span class="modal-meta-label" data-i18n="modal.role">Үүрэг</span>
+          <span class="modal-meta-val" id="modal-role"></span>
+        </div>
+        <div class="modal-meta-item">
+          <span class="modal-meta-label" data-i18n="modal.year">Он</span>
+          <span class="modal-meta-val" id="modal-year"></span>
+        </div>
+        <div class="modal-meta-item">
+          <span class="modal-meta-label" data-i18n="modal.stack">Технологи</span>
+          <span class="modal-meta-val" id="modal-stack"></span>
+        </div>
+      </div>
+      <div class="modal-actions" id="modal-actions">
+        <a id="modal-live" href="#" class="mbtn-primary" target="_blank" rel="noopener">
+          <i class="bi bi-box-arrow-up-right"></i> <span data-i18n="modal.live">Нээх</span>
+        </a>
+        <a id="modal-store" href="#" class="mbtn-secondary" target="_blank" rel="noopener">
+          <i class="bi bi-phone"></i> <span data-i18n="modal.store">Апп дэлгүүр</span>
+        </a>
+      </div>
+      <div class="modal-more" id="modal-more" hidden></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "buildCommand": "mkdir -p .output && cp -R 'Alex-Buyer file/.' .output/ && rm -rf .output/img/raw",
+  "outputDirectory": ".output",
+  "cleanUrls": true,
+  "framework": null
+}
